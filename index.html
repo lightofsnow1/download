@@ -1,0 +1,56 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title ig</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function updateTime() {
+            const timeElement = document.querySelector('.time');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            timeElement.textContent = `${hours}:${minutes}`;
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            updateTime();
+            setInterval(updateTime, 1000);
+        });
+    </script>
+</head>
+<body>
+    <header class="flex flex-row v-center">
+        <div class="icons">
+            <span>📰</span>
+            <span>🎮</span>
+        </div>
+        <h1 class="time">00:00</h1>
+        <div class="icons">
+            <span>⚙️</span>
+            <span>⭕</span>
+        </div>
+    </header>
+    <main>
+        <section class="games flex">
+            <div class="item"><a href="minecraft.html"><img src="https://i.imgur.com/p8VKxY8.png" alt="Minecraft"></a></div>
+            <div class="item"><a href="minecraft.html"><img src="https://i.imgur.com/p8VKxY8.png" alt="Minecraft"></a></div>
+            <!-- Add games here -->
+        </section>
+    </main>
+    <footer>
+        <div class="mode">
+            Launcher coded by @Juhstxn
+            <a href="https://twitch.tv/JuhstxnTV">
+                <img src="https://i.imgur.com/hbrvx9K.png" alt="Twitch" width="25" height="25">
+            </a>
+            <a href="https://www.youtube.com/juhstxn">
+                <img src="https://i.imgur.com/8RdFdnp.png" alt="Youtube" width="30" height="30">
+            </a>
+            <a href="https://discord.gg/8PG4UKXkfm">
+                <img src="https://i.imgur.com/J9jS0YM.png" alt="Discord" width="30" height="25">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
